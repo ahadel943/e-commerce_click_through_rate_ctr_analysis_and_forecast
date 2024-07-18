@@ -1,4 +1,4 @@
-# E-Commerce Click-Through Rate (CTR) Analysis and Foreacst
+# E-Commerce Click-Through Rate (CTR) Analysis and Forecast
 
 # Introduction
 
