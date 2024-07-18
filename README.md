@@ -8,7 +8,7 @@ This project focuses on a detailed time series analysis of the Click-Through Rat
 
 * **Trend and Time Series Analysis**
   * **Seasonal Trends:** Identify patterns over different times of the year (Year, Month) to understand high and low traffic periods.
-  * **Time Series Forecasting:** Use models like ARIMA, SARIMA, or Prophet to predict future web traffic metrics.
+  * **Time Series Forecasting:** Use models like ARIMA, SARIMA, or STDLR to predict future web traffic metrics.
 
 ## Data cleaning and preparatrion
 
@@ -42,6 +42,7 @@ After cleaning, preparing and understanding the data found the following notes
     * click_through_rate: 5.45%.
     
 2) By inspecting the characteristics of the data features we found the following:
+    ![click_and_impressions_correlation](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/1.click_and_impressions_correlation.jpg)
     * A moderate positive linear relation between **Clicks** and **Impressions** with a correlation coefficient of **0.68**.
     * No outliers were found in the CTR data series.
     * **CTR** data is almost normally ditributed the **average** is **5.45%** and the **median** is **5.50%**.
