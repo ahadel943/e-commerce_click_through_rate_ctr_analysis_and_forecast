@@ -78,28 +78,38 @@ After cleaning, preparing and understanding the data found the following notes
     
 6) Based on the daily average CTR data from 2020 to 2023 the following insights were found:
     * **High** and **Low** CTR Days:
+        ![2020_average_ctr_by_day](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/9.2020_average_ctr_by_day.jpg)
         * **2020**: Highest CTR on **Thursday** (6.14%), lowest on **Tuesday** (5.02%).
+        ![2021_average_ctr_by_day](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/10.2021_average_ctr_by_day.jpg)
         * **2021**: Highest CTR on **Tuesday** (5.79%), lowest on **Sunday** (5.19%).
+        ![2022_average_ctr_by_day](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/11.2022_average_ctr_by_day.jpg)
         * **2022**: Highest CTR on **Friday** (5.87%), lowest on **Tuesday** (5.00%).
+        ![2023_average_ctr_by_day](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/12.2023_average_ctr_by_day.jpg)
         * **2023**: Highest CTR on **Tuesday** (6.07%), lowest on **Friday** (4.78%).
     * **Thursday** tends to have high CTRs consistently, peaking at **6.14%** in **2020** and maintaining above **5%** in other years.
     * **Tuesday** shows notable peaks in **2021** (**5.79%**) and **2023** (**6.07%**).
     * **Friday** generally shows lower CTRs, particularly in **2021** (**5.04%**) and **2023** (**4.78%**).
     * **Tuesday** in **2022** also has a relatively low CTR (**5.00%**).
+    ![ctr_seasonality_index_by_day](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/13.ctr_seasonality_index_by_day.jpg)
     * **Thursday** (**1.032**), indicating the **best** performance relative to other days.
     * **Friday** (**0.953**), indicating consistently **lower** performance.
 
 7) Based on the segmentation of our CTR data by weekdays and weekends, here are some insights:
+    ![2020_average_ctr_by_day_category](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/14.2020_average_ctr_by_day_category.jpg)
     * **2020**: **Weekends** have a higher CTR than **weekdays** (5.61% vs. 5.45%).
+    ![2021_average_ctr_by_day_category](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/15.2021_average_ctr_by_day_category.jpg)
     * **2021**: **Weekdays** have a slightly higher CTR than **weekends** (5.46% vs. 5.30%).
+    ![2022_average_ctr_by_day_category](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/16.2022_average_ctr_by_day_category.jpg)
     * **2022**: **Weekdays** and **weekends** have almost the same CTR (5.44% vs. 5.40%).
+    ![2023_average_ctr_by_day_category](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/17.2023_average_ctr_by_day_category.jpg)
     * **2023**: **Weekends** have a significantly higher CTR than **weekdays** (5.63% vs. 5.38%).
     * **2020** and **2023**: Weekends consistently show higher CTRs compared to **weekdays**, suggesting that users are more engaged during weekends in these years. This could be due to users having more free time to browse and engage with content.
     * In **2021**, **weekdays** performed better than **weekends**. This anomaly could be investigated to understand if there were specific campaigns, content, or external factors influencing user behavior during weekends in that year.
     * **2022** shows minimal difference between **weekdays** and **weekends**, indicating a balanced user engagement throughout the week.
     * The higher weekend CTR in 2023 (5.63%) suggests a strong opportunity to focus on weekend campaigns and promotions.
     
-8) The following insights were uncovered during our CTR monthly forecast:
+9) The following insights were uncovered during our CTR monthly forecast:
+    ![average_ctr_seasonal_forecast_model](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/18.average_ctr_seasonal_forecast_model.jpg)
     * I used a Seasonal Trend Decomposition using Linear Regression (**STDLR**) model bioh approaches, **Multiplicative** and **Additive** models, The monthly data prefered the **Multiplicative** model (with a **MAPE** of **5.71%**) over the **Additive** model (with a **MAPE** of **19.54%**).
     * Given the lower **MAPE** of the **Multiplicative** model (**5.71%**), rely on these forecasts for planning and strategy development, The forecasted data for 2024 aligns well with historical trends, providing a reliable basis for decision-making.
     * The **forecasted** data follows the same pattern of the **seasonality indices**.
