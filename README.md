@@ -44,34 +44,39 @@ After cleaning, preparing and understanding the data found the following notes
 2) By inspecting the characteristics of the data features we found the following:
     ![click_and_impressions_correlation](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/1.click_and_impressions_correlation.jpg)
     * A moderate positive linear relation between **Clicks** and **Impressions** with a correlation coefficient of **0.68**.
+    ![ctr_description](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/2.ctr_description.jpg)
     * No outliers were found in the CTR data series.
     * **CTR** data is almost normally ditributed the **average** is **5.45%** and the **median** is **5.50%**.
     * The minimum CTR value is **1.00%** and the maximum value is **10.00%**.
     * The overall standard deviation is **2.59%**.
     
 3) After analyzing the CTR data by year the following insights were found:
+    ![avg_ctr_by_year](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/3.avg_ctr_by_year.jpg)
     * From **2020** to **2021** there was a dip by **-1.55%** followed by a **0.35%** increase in **2022** then another slight increase in **2023** by **0.41%**.
     * **2020** has an average of **5.50%**.
     * **2021** has a average of **5.41%**.
     * **2022** has a average of **5.43%**.
     * **2023** has a average of **5.45%**.
     
-4) Based on the monthly average CTR data from 2020 to 2023 here are some insights:
-    * **High** CTR Months:
-        * **2020**: **March** (5.86%), **June** (5.76%), **August** (6.29%), **October** (5.91%).
-        * **2021**: **January** (5.66%), **April** (5.69%), **December** (5.74%).
-        * **2022**: **April** (6.06%), **June** (6.04%), **September** (5.77%), **December** (5.86%).
-        * **2023**: **June** (6.14%), **October** (5.91%), **December** (5.86%).
-    * **Low** CTR Months:
-        * **2020**: **April** (4.60%), **September** (4.90%), **November** (5.09%).
-        * **2021**: **May** (5.17%), **October** (4.95%), **November** (4.95%).
-        * **2022**: **May** (4.71%), **October** (4.81%).
-        * **2023**: **January** (4.74%), **September** (4.98%).
+5) Based on the monthly average CTR data from 2020 to 2023 here are some insights:
+    ![2020_average_ctr_by_month](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/4.2020_average_ctr_by_month.jpg)
+    * **2020**: **March** (5.86%), **June** (5.76%), **August** (6.29%), **October** (5.91%).
+    * **2020**: **April** (4.60%), **September** (4.90%), **November** (5.09%).
+    ![2021_average_ctr_by_month](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/5.2021_average_ctr_by_month.jpg)
+    * **2021**: **January** (5.66%), **April** (5.69%), **December** (5.74%).
+    * **2021**: **May** (5.17%), **October** (4.95%), **November** (4.95%).
+    ![2022_average_ctr_by_month](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/6.2022_average_ctr_by_month.jpg)
+    * **2022**: **April** (6.06%), **June** (6.04%), **September** (5.77%), **December** (5.86%).
+    * **2022**: **May** (4.71%), **October** (4.81%).
+    ![2023_average_ctr_by_month](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/7.2023_average_ctr_by_month.jpg)
+    * **2023**: **June** (6.14%), **October** (5.91%), **December** (5.86%).
+    * **2023**: **January** (4.74%), **September** (4.98%).
+    ![ctr_seasonality_index_by_month](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/8.ctr_seasonality_index_by_month.jpg)
     * **June** consistently shows high CTR across all years, which is also reflected in the highest S.I. (**1.08**). This indicates that **June** is a strong month for user engagement.
     * Other months like **April**, **August**, and **December** also show high performance in specific years but are not as consistently high as **June**.
     * **Low** performance in months like **April** **2020** (**4.60%**) and **May** **2022** (**4.71%**) suggests possible external factors affecting these months.
     
-5) Based on the daily average CTR data from 2020 to 2023 the following insights were found:
+6) Based on the daily average CTR data from 2020 to 2023 the following insights were found:
     * **High** and **Low** CTR Days:
         * **2020**: Highest CTR on **Thursday** (6.14%), lowest on **Tuesday** (5.02%).
         * **2021**: Highest CTR on **Tuesday** (5.79%), lowest on **Sunday** (5.19%).
@@ -84,7 +89,7 @@ After cleaning, preparing and understanding the data found the following notes
     * **Thursday** (**1.032**), indicating the **best** performance relative to other days.
     * **Friday** (**0.953**), indicating consistently **lower** performance.
 
-6) Based on the segmentation of our CTR data by weekdays and weekends, here are some insights:
+7) Based on the segmentation of our CTR data by weekdays and weekends, here are some insights:
     * **2020**: **Weekends** have a higher CTR than **weekdays** (5.61% vs. 5.45%).
     * **2021**: **Weekdays** have a slightly higher CTR than **weekends** (5.46% vs. 5.30%).
     * **2022**: **Weekdays** and **weekends** have almost the same CTR (5.44% vs. 5.40%).
@@ -94,7 +99,7 @@ After cleaning, preparing and understanding the data found the following notes
     * **2022** shows minimal difference between **weekdays** and **weekends**, indicating a balanced user engagement throughout the week.
     * The higher weekend CTR in 2023 (5.63%) suggests a strong opportunity to focus on weekend campaigns and promotions.
     
-7) The following insights were uncovered during our CTR monthly forecast:
+8) The following insights were uncovered during our CTR monthly forecast:
     * I used a Seasonal Trend Decomposition using Linear Regression (**STDLR**) model bioh approaches, **Multiplicative** and **Additive** models, The monthly data prefered the **Multiplicative** model (with a **MAPE** of **5.71%**) over the **Additive** model (with a **MAPE** of **19.54%**).
     * Given the lower **MAPE** of the **Multiplicative** model (**5.71%**), rely on these forecasts for planning and strategy development, The forecasted data for 2024 aligns well with historical trends, providing a reliable basis for decision-making.
     * The **forecasted** data follows the same pattern of the **seasonality indices**.
