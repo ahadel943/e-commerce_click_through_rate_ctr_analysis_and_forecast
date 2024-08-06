@@ -110,7 +110,7 @@ After cleaning, preparing and understanding the data found the following notes
     
 9) The following insights were uncovered during our CTR monthly forecast:
     ![average_ctr_seasonal_forecast_model](https://github.com/ahadel943/e-commerce_click_through_rate_ctr_analysis_and_forecast/blob/main/charts/18.average_ctr_seasonal_forecast_model.jpg)
-    * I used a Seasonal Trend Decomposition using Linear Regression (**STDLR**) model bioh approaches, **Multiplicative** and **Additive** models, The monthly data prefered the **Multiplicative** model (with a **MAPE** of **5.71%**) over the **Additive** model (with a **MAPE** of **19.54%**).
+    * I used a Seasonal Trend Decomposition using Linear Regression (**STDLR**) model both approaches, **Multiplicative** and **Additive** models, The monthly data prefered the **Multiplicative** model (with a **MAPE** of **5.71%**) over the **Additive** model (with a **MAPE** of **19.54%**).
     * Given the lower **MAPE** of the **Multiplicative** model (**5.71%**), rely on these forecasts for planning and strategy development, The forecasted data for 2024 aligns well with historical trends, providing a reliable basis for decision-making.
     * The **forecasted** data follows the same pattern of the **seasonality indices**.
     * The month of **June** historically and forecasted as the **highest** engagement month.
